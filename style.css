@@ -974,7 +974,7 @@ color: gray;
     gap: 30px;
    }
   }
-  @media only screen and (max-width:470px){
+  @media only screen and (max-width:490px){
     header{
         margin-left: 60vw;
     }
