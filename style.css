@@ -1,0 +1,1328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://salman-aamir.github.io/SalmanNehari-12th-Assignment/backgroun-Image.jpg");
+}
+body::selection{
+background: var(--background-color);
+color: var(--foreground-color);
+
+
+}
+
+:root {
+    --foreground-color: #ffffff;
+    --background-color: #f29d13;
+}
+header {
+    max-width: fit-content;
+    display: flex;
+    margin-left: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.one {
+    display: flex;
+    cursor: pointer;
+    width: 150px;
+    height: 35px;
+    color: var(--foreground-color);
+    background: var(--background-color);
+    border-radius: 8px;
+    padding-top: 5px;
+}
+.one div{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.one svg {
+    height: 15px;
+    margin: 10px 3px 0px 10px;
+    cursor: pointer;
+}
+.one .span1{
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.one .span2{
+    padding-top: 7px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.one .span{
+    font-family: "Poppins", sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.one:hover{
+    transform: scale(1.1);
+}
+.two:hover{
+    transform: scale(1.1);
+}
+.two{
+    display: flex;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 114px;
+    height: 30px;
+    color: var(--foreground-color);
+    background: var(--background-color);
+    border-radius: 8px;
+    padding-top: 10px;
+}
+.two svg{
+        height: 15px;
+        margin: 3px 3px 0px 10px;
+        cursor: pointer;
+    
+}
+.two .span2{
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 7px;
+    cursor: pointer;
+
+}
+.cart{
+    color: var(--background-color);
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    right:40px;
+    cursor: pointer;
+}
+.zero{
+    cursor: pointer;
+    height: 20px;
+    width: 11px;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    padding-left: 6px;
+    padding-right: 2px;
+    border-radius: 50%;
+    font-weight: bold;
+    outline: 1px solid var(--foreground-color);
+    position:absolute ;
+    top: 20px;
+    right: 30px;
+}
+.logo{
+    cursor: pointer;
+    position: absolute;
+    height: 120px;
+    top:0;
+    left: 50vw;
+    z-index: 2;
+}
+
+.bg-image img {
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+    bottom: 53px;
+
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    background-color: var(--background-color);
+    height: 50px;
+    box-shadow: 5px 0px 20px 5px rgba(0, 0, 0, 0.329);
+    font-weight: 600;
+    position: relative;
+    bottom: 60px;
+
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.food-list ul li:hover {
+    background-color:black;
+    color: var(--background-color);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 8px;
+}
+
+.food-list {
+    position: sticky;
+    top: 59px;
+    z-index:2;
+
+}
+
+.arrowhead{
+    width:100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 320px;
+}
+.leftarrow{
+    background-color: rgba(0, 0, 0, .7);
+    width: 40px;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+.leftarrow .img{
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+}
+.rightarrow{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .7);
+    width: 40px;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+.rightarrow .img{
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+    transform: rotate(180deg);
+
+}
+
+
+
+.circle{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 145px;
+    gap:5px ;
+    max-width: 99vw;
+}
+.circle1{
+    background: var(--foreground-color);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+}
+.circle2{
+    background: var(--foreground-color);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+.searchbar{
+    cursor: pointer;
+    position:relative;
+    left: 65px;
+   bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #f29d13;
+    width: 86vw;
+    height: 30px;
+    padding: 10px;
+    border-radius: 35px;
+    color: #f29d13;
+    font-size: 25px;
+}
+.searchbar .input{
+    font-family: "poppins",sans-serif;
+    font-size: 16px;
+    border: none;
+    color: var(--background-color);
+    background:none;
+}
+.input::placeholder{
+ color: var(--background-color);
+}
+
+.searchbar svg{
+    transform: rotate(180deg);
+    height: 30px;
+    width: 30px;
+border-radius: 20px;
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+}
+
+ 
+
+.h2{
+    cursor: pointer;
+    margin-left: 65px;
+    font-size: 19px;
+    max-width:fit-content;
+}
+.h2 svg{
+height: 20px;
+}
+p{
+    margin-left: 65px;
+    font-size: 16px;
+    min-width:fit-content;
+}
+.items{
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 65px;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:10px;
+    max-width: 85vw;
+}
+.item1{
+    cursor: pointer;
+    width: 21vw;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 1px 0 1.5px rgba(0, 0, 0, .08) !important;
+    
+    
+    
+
+}
+.item1:hover{
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+.item1 .img{
+    cursor: pointer;
+    height: 300px;
+    width: 21vw;
+    border-radius: 10px;
+    
+}
+.items .shadow{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    height: 300px;
+    width: 21vw;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.151),rgba(255, 255, 255, 0));
+}
+.items .shadow:hover{
+background:none;
+}
+.text{
+    cursor: pointer;
+    font-family: "poppins",sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--foreground-color);
+}
+.text2{
+    cursor: pointer;
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    width: 120px;
+    height: 25px;
+    padding-left: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px;
+    background-color: var(--foreground-color);
+}
+.nihariimg{
+    max-width: 93vw;
+}
+.nihariimg img{
+    cursor: pointer;
+width: 90vw;
+border-radius: 20px;
+margin-left: 60px;
+margin-top: 40px;
+}
+
+.parentitem2{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 75px;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:10px;
+    max-width: 85vw;
+}
+.item2{
+    background-color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    width: 21vw;
+    height: 420px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px 0px rgb(241, 239, 239);
+}
+.item2:hover{
+    border: 2px solid var(--background-color);
+    transform: scale(1.05);
+    transition: transform 1s ease;
+}
+.item2 .img2{
+    cursor: pointer;
+    width: 21vw;
+    height: 250px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+
+}
+.item2 p{
+    cursor: pointer;
+    font-family: "poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-left: 8vw;
+}
+.item2 .p2{
+    cursor: pointer;
+color: var(--background-color);
+font-family: "poppins",sans-serif;
+font-size: 13px;
+font-weight: 700;
+margin-left: 7vw;
+}
+.item2 .button{
+    cursor: pointer;
+    font-family: "poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--foreground-color);
+    background: var(--background-color);
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    margin-left: 5.4vw;
+    margin-top: 20px;
+    padding-left: 52px;
+    padding-top: 10px;
+}
+.item2 .button2{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    font-family: "poppins",sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    width: 50px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px;
+    height: 20px;
+    background:#ffd400;
+    animation: motion 2s cubic-bezier(0, 1.32, 0.64, 1) reverse;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes motion{
+    from{
+
+}
+to{
+ transform: translateY(10px);
+}
+}
+.item2 .nalli{
+    margin-left:7vw;
+}
+.item2 .maghaz{
+    margin-left: 6vw;
+}
+.item2 .special{
+    margin-left: 6vw;
+}
+.item2 .chicken{
+    margin-left: 8vw;
+}
+.item2 .biryani{
+    margin-left: 5vw;
+}
+.item2 .rotti{
+    margin-left: 9vw;
+}
+
+.item2 .p3{
+    cursor: pointer;
+    color: var(--background-color);
+font-family: "poppins",sans-serif;
+font-size: 13px;
+font-weight: 700;
+margin-left: 8vw;
+}
+.item2 .p4{
+    cursor: pointer;
+    color: var(--background-color);
+font-family: "poppins",sans-serif;
+font-size: 13px;
+font-weight: 700;
+margin-left: 9vw;
+}
+.item2 .button3{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    font-family: "poppins",sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    width: 80px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+    height: 20px;
+    background:#ffd400;
+    animation: motion 2s cubic-bezier(0, 1.32, 0.64, 1) reverse;
+    animation-iteration-count: infinite;
+}
+.item2 .button5{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    font-family: "poppins",sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    width: 80px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-top-right-radius:15px ;
+    height: 20px;
+    background:#ffd400;
+    animation: motion 2s cubic-bezier(0, 1.32, 0.64, 1) reverse;
+    animation-iteration-count: infinite;
+}
+
+
+.item2 .button4{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    font-family: "poppins",sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    width: 70px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px;
+    height: 30px;
+    background:#ffd400;
+    animation: motion 2s cubic-bezier(0, 1.32, 0.64, 1) reverse;
+    animation-iteration-count: infinite;
+}
+.parentitem3{
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 110px;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr;
+    gap:10px;
+    max-width: 85vw;
+}
+.parentitem4{
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 110px;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:10px;
+    max-width: 85vw;
+}
+.parentitem5{
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 110px;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:10px;
+    max-width: 85vw;
+}
+.item2 .gm{
+    cursor: pointer;
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top:0px ;
+}
+.item2 .beef{
+    cursor: pointer;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+.item2 .beef2{
+    cursor: pointer;
+    margin-left: 7.5vw;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.item2 .canimg{
+    cursor: pointer;
+    width: 21vw;
+    height: 230px;
+    border-radius: 20px;
+}
+.para{
+    cursor: pointer;
+    font-family: "poppins",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    background:var(--foreground-color);
+    margin-top: 60px;
+    color: rgb(104, 103, 103);
+    margin-left:18vw;
+    padding: 30px;
+    max-width: fit-content;
+}
+
+.black{
+   cursor: pointer;
+    width: 100%;
+    height: 40vh;
+    background: #1b1b1b;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 10px;
+}
+.text5{
+    font-family: "poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+color: gray;
+}
+
+.anchor1{   
+    font-family: "poppins",sans-serif;
+    font-weight: bold;
+    font-size: 18px; 
+    color: white;
+}
+.anchor{
+    color: white;
+    font-family: "poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.back-to-top {
+    position: fixed;
+    z-index: 3;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color:var(--background-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .back-to-top:hover {
+    transform: translateY(-5px);
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid white;
+  }
+  
+
+  @media only screen and (max-width: 1100px){
+    .cart{
+        display: none;
+    }
+    .zero{
+        display: none;
+    }
+    .arrowhead{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 1000px){
+   
+
+    .item2 .button{
+        
+       margin-left: 4.4vw; 
+    } 
+    .item2 .nalli{
+        margin-left: 6vw;
+    }
+    .item2 .p2{
+        margin-left: 6vw;
+    }
+    .item2 .maghaz{
+        margin-left: 5vw;
+    }
+    .item2 .special{
+        margin-left: 5vw;
+    }
+    .item2 .chicken{
+        margin-left: 7vw;
+    }
+    .item2 .beef{
+        margin-left: 4vw;
+    }
+    .text2{
+        font-size: 14px;
+        width: 96px;
+    }
+  }
+
+  @media only screen and (max-width: 870px){
+    
+    .parentitem2{
+        
+        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+     
+    
+     .item2 .button{
+        cursor: pointer;
+        font-family: "poppins", sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--foreground-color);
+        background: var(--background-color);
+        width: 80px;
+        height: 30px;
+        border-radius: 50px;
+        margin-left: 3.4vw;
+        margin-top: 20px;
+        padding-left: 52px;
+        padding-top: 10px;
+    }
+     .item2 .nalli{
+        font-size: 13px;
+         margin-left: 7vw;
+     }
+     .item2 p{
+        margin-left: 9vw;
+     }
+     .item2 .p2{
+        font-size: 13px;
+         margin-left: 6vw;
+     }
+     .item2 .p3{
+        margin-left:9vw ;
+     }
+     .item2 .maghaz{
+        font-size: 13px;
+         margin-left: 6vw;
+     }
+     .item2 .special{
+        font-size: 13px;
+         margin-left: 6vw;
+     }
+     .item2 .chicken{
+        font-size: 13px;
+         margin-left: 8vw;
+     }
+     .item2 .beef{
+        font-size: 13px;
+         margin-left: 4vw;
+     }
+     .text2{
+         font-size: 14px;
+         width: 96px;
+     }
+     .item2{
+        width: 27vw;
+     }
+
+     .item2 .img2 {
+        width: 27vw;   
+    } 
+    .item2 .canimg{
+        width: 27vw;
+    }
+
+    .searchbar{
+        left: 15px;
+    }
+
+    .h2{
+        margin-left: 15px;
+    }
+
+    p{
+        margin-left: 15px;
+    }
+    .items{
+        margin-left: 15px;
+    }
+    .nihariimg img{
+        margin-left: 15px;
+    }
+
+    .parentitem2{
+        margin-left: 35px;
+    }
+
+    .parentitem3{
+        margin-left: 35px;
+    }
+    .parentitem4{
+        margin-left: 35px;
+    }
+    .parentitem5{
+        margin-left: 35px;
+    }
+
+    ul{
+        font-size: 13px;
+    }
+    .para{
+        margin-left: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 750px){
+    header{
+        margin-left: 75vw;
+        margin-top: 5px;
+    }
+    
+    .one{
+        height: 30px;
+        width: 30px;
+    }
+    .one svg{
+        height: 15px;
+        margin: 5px 3px 0px 10px;
+    }
+    
+    .one .span1{
+        display: none;
+    }
+    .one .span{
+        display: none;
+    }
+    .two{
+        margin-left: 5px;
+        width: 92px;
+        height: 25px;
+
+    }
+
+    .two svg{
+        height: 12px;
+        margin: 4px 3px 0px 10px;
+    }
+
+    .two .span2{
+        font-size: 10px;
+    }
+    .logo{
+        height: 70px;
+        left: 10px;
+    }
+    .bg-image img{
+        bottom: 65px;
+    }
+
+    ul{
+        bottom: 71px;
+    }
+    .searchbar{
+        width: 90vw;
+    }
+    .nihariimg img{
+        width: 95vw;
+    }
+    .items{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+        column-gap: 40px;
+        margin-left: 40px;
+    }
+    .item1{
+        width: 41vw;
+    }
+    .item1 .img{
+        width: 41vw;
+    }
+    .item1 .shadow{
+        width: 41vw;
+    }
+    .parentitem2{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 35px;
+    }
+    .item2{
+        width: 41vw;
+    }
+    .item2 .img2{
+        width: 41vw;
+    }
+    .item2 .canimg {
+        width: 41vw;
+    }
+    .item2 p {
+        margin-left: 17vw;
+    }
+    .item2 .p2 {
+        margin-left: 15vw;
+    }
+
+    .item2 .button {
+        margin-left: 12.4vw;
+    }
+
+    .item2 .nalli {
+        margin-left: 16vw;
+    }
+    .item2 .maghaz {
+        margin-left: 14vw;
+    }
+    .item2 .special {
+        margin-left: 15vw;
+    }
+    .item2 .chicken {
+        margin-left: 17vw;
+    }
+    .item2 .p3 {
+        margin-left: 18vw;
+    }
+    .item2 .biryani {
+        margin-left: 12vw;
+    }
+    .item2 .p4{
+        margin-left: 18vw;
+    }
+    .item2 .rotti {
+        margin-left: 18vw;
+    }
+    .item2 .beef2{
+        margin-left: 16.5vw;
+    }
+
+    .item2 .beef {
+        margin-left: 13vw;
+    }
+    .item2 .gm{
+        margin-left: 18vw;
+    }
+  }
+
+
+  @media only screen and (max-width:580px){
+    header{
+        margin-left: 70vw;
+    }
+    .circle1 {
+        height: 5px;
+        width: 5px;
+        
+  }
+    .circle2 {
+        height: 5px;
+        width: 5px;
+        
+  }
+  .circle {
+    bottom: 133px;
+    gap: 1px;
+  }
+   ul{
+    gap: 30px;
+   }
+  }
+  @media only screen and (max-width:470px){
+    header{
+        margin-left: 60vw;
+    }
+    ul{
+    gap: 20px;
+    font-size: 10px;
+   }
+   .items {
+    margin-left: 13px;
+}
+.nihariimg img {
+    margin-left: 13px;
+}
+.item2 p {
+    margin-left: 15vw;
+        font-size: 12px;
+
+}
+.item2 .p2 {
+    margin-left: 13vw;
+    font-size: 10px;
+}
+
+.item2 .button {
+    margin-left: 11.4vw;
+    padding-top: 5px;
+    padding-left: 30px;
+    width: 58px;
+        height: 25px;
+}
+
+.item2 .nalli {
+    margin-left: 13vw;
+    font-size: 11px;
+}
+.item2 .maghaz {
+    margin-left: 12vw;
+    font-size: 11px;
+}
+.item2 .special {
+    margin-left: 12vw;
+    font-size: 11px;
+}
+.item2 .chicken {
+    margin-left: 15vw;
+    font-size: 11px;
+}
+.item2 .p3 {
+    margin-left: 16vw;
+        font-size: 10px;
+}
+.item2 .biryani {
+    margin-left: 11vw;
+    font-size: 11px;
+}
+.item2 .p4{
+    margin-left: 17vw;
+    font-size: 10px;
+}
+.item2 .rotti {
+    margin-left: 18vw;
+}
+.item2 .beef2{
+    margin-left: 14.5vw;
+    font-size: 11px;
+}
+
+.item2 .beef {
+    margin-left: 10vw;
+    font-size: 11px;
+}
+.item2 .gm{
+    margin-left: 17vw;
+    font-size: 8px;
+}
+.para {
+    font-size: 10px;
+}
+.text5 {
+    font-size: 13px;
+}
+.anchor1{
+    font-size: 12px;
+}
+.anchor{
+    font-size: 12px;
+}
+.parentitem2 {
+    column-gap: 20px;
+}
+p {
+    margin-left: 15px;
+    font-size: 11px;
+}
+.h2 {
+    margin-left: 15px;
+    font-size: small;
+}
+.h2 svg {
+    height: 13px;
+}
+.searchbar{
+    width:80vw;
+}
+.searchbar .input{
+    font-size: 12px;
+    width: 130px;
+}
+  }
+  @media only screen and (max-width:388px){
+    
+  ul{
+    gap: 12px;
+  }
+  .searchbar{
+    height: 15px;
+    width: 85vw;
+  }
+  .searchbar svg{
+    height: 25px;
+    width: 25px;
+    margin: -5px
+  }
+  .text2 {
+    font-size: 11px;
+    width: 75px;
+    height: 17px;
+    padding-left: 4px;
+}
+.text{
+    font-size: 11px;
+}
+
+.parentitem2{
+    margin-left: 15px;
+    column-gap: 20px;
+}
+
+  }
+
+  @media only screen and ( max-width: 326px){
+    header{
+        margin-left: 50vw;
+    }
+    ul {
+        gap: 10px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .items {
+        margin-left: 13px;
+        column-gap: 20px;
+    }
+    .item2 p {
+        margin-left: 14vw;
+            font-size: 12px;
+    
+    }
+    .item2 .p2 {
+        margin-left: 11vw;
+        font-size: 10px;
+    }
+    
+    .item2 .button {
+        margin-left: 7.4vw;
+        padding-top: 5px;
+        padding-left: 30px;
+        width: 58px;
+            height: 25px;
+    }
+    
+    .item2 .nalli {
+        margin-left: 12vw;
+        font-size: 11px;
+    }
+    .item2 .maghaz {
+        margin-left: 9vw;
+        font-size: 10px;
+    }
+    .item2 .special {
+        margin-left: 9vw;
+        font-size: 10px;
+    }
+    .item2 .chicken {
+            margin-left: 13vw;
+            font-size: 11px;
+    }
+    .item2 .p3 {
+        margin-left: 16vw;
+            font-size: 10px;
+    }
+    .item2 .biryani {
+        margin-left: 10vw;
+        font-size: 9px;
+    }
+    .item2 .p4{
+        margin-left: 17vw;
+        font-size: 10px;
+    }
+    .item2 .rotti {
+        margin-left: 18vw;
+    }
+    .item2 .beef2{
+        margin-left: 14.5vw;
+        font-size: 11px;
+    }
+    
+    .item2 .beef {
+        margin-left: 9vw;
+        font-size: 9px;
+    }
+    .item2 .gm{
+        margin-left: 17vw;
+        font-size: 8px;
+    }
+    .item2 .button2 {
+       
+        font-size: 8px;
+        width: 40px;
+        padding-left: 10px;
+        padding-top: 2px;
+        height: 14px;
+    }
+    .item2 .button3 {
+        font-size: 7px;
+        width: 60px;
+        padding-left: 10px;
+        padding-top: 2px;
+        height: 12px;
+    }
+    .item2 .button4{
+        font-size: 9px;
+        width: 47px;
+        padding-left: 10px;
+        padding-top: 2px;
+        height: 26px;
+    }
+    .item2 .button5{
+        font-size: 7px;
+        width: 52px;
+        padding-left: 10px;
+        padding-top: 2px;
+        height: 12px;
+    }
+    
+}
+@media only screen and (max-width:290px){
+    ul{
+        gap: 5px;
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    .text5 {
+        font-size: 11px;
+    }
+    .anchor1{
+        font-size: 9px;
+    }
+    .anchor{
+        font-size: 9px;
+    }
+    
+}
+@media only screen and (max-width:280px){
+    .item2 p {
+        margin-left: 14vw;
+            font-size: 12px;
+    
+    }
+    .item2 .p2 {
+        margin-left: 9vw;
+        font-size: 10px;
+    }
+    
+    .item2 .button {
+        margin-left: 5.4vw;
+        padding-top: 5px;
+        padding-left: 30px;
+        width: 58px;
+            height: 25px;
+    }
+    
+    .item2 .nalli {
+        margin-left: 12vw;
+        font-size: 11px;
+    }
+    .item2 .maghaz {
+        margin-left: 9vw;
+        font-size: 10px;
+    }
+    .item2 .special {
+        margin-left: 9vw;
+        font-size: 10px;
+    }
+    .item2 .chicken {
+            margin-left: 13vw;
+            font-size: 11px;
+    }
+    .item2 .p3 {
+        margin-left: 13vw;
+            font-size: 10px;
+    }
+    .item2 .biryani {
+        margin-left: 10vw;
+        font-size: 9px;
+    }
+    .item2 .p4{
+        margin-left: 17vw;
+        font-size: 10px;
+    }
+    .item2 .rotti {
+        margin-left: 18vw;
+    }
+    .item2 .beef2{
+        margin-left: 10.5vw;
+        font-size: 11px;
+    }
+    
+    .item2 .beef {
+        margin-left: 7vw;
+        font-size: 9px;
+    }
+    .item2 .gm{
+        margin-left: 14vw;
+        font-size: 8px;
+    }   
+    .parentitem2{
+        column-gap: 10px;
+        margin-left: 15px;
+    }
+    .parentitem3{
+        column-gap: 10px;
+        margin-left: 15px;
+    }
+    .parentitem4{
+        column-gap: 10px;
+        margin-left: 15px;
+    }
+    .parentitem5{
+        column-gap: 10px;
+        margin-left: 15px;
+    }
+    .nihariimg img {
+        margin-left: 8px;
+    }
+    .blackgrandchild{
+        max-width: 103px;
+    }
+    
+}
